@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MyStore</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="media/favicon.png" alt="Metro_Scales">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="product1.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-products">
+            <h3>Featured Products</h3>
+            <div class="product-grid">
+                <div class="product" data-id="5" data-name="Product 5" data-price="10">
+                    <img src="media/scale.jpeg" alt="Product 5">
+                    <h4>Product 5</h4>
+                    <p>₹ 10</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="6" data-name="Product 6" data-price="20">
+                    <img src="media/scale2.jpeg" alt="Product 6">
+                    <h4>Product 6</h4>
+                    <p>₹ 20</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="7" data-name="Product 7" data-price="30">
+                    <img src="media/scale4.jpeg" alt="Product 7">
+                    <h4>Product 7</h4>
+                    <p>₹ 30</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="8" data-name="Product 8" data-price="40">
+                    <img src="media/scale3.jpeg" alt="Product 8">
+                    <h4>Product 8</h4>
+                    <p>₹ 40</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>      
+                <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+                    <img src="media/scale.jpeg" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>₹ 50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+                    <img src="media/scale3.jpeg" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>₹ 19</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+                    <img src="media/scale4.jpeg" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>₹ 192</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+                    <img src="media/favicon.png" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>₹ 195</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+                    <img src="media/scale2.jpeg" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>₹ 15</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>                 
+            </div>
+        </section>
+    </main>
+
+    <!-- pop up-->>
+    <div class="popup-container" id="popup">
+        <div class="popup-box">
+            <div class="popup-header">
+                <span class="popup-icon">&#10003;</span>
+                <span class="popup-message" id="popup-message">Product successfully added to your cart!</span>
+                <span class="popup-close" onclick="closePopup()">×</span>
+            </div>
+            <div class="popup-content">
+                <img id="popup-image" src="" alt="Product Image">
+                <div class="popup-details">
+                    <span id="popup-product-name">Product Name</span>
+                    <span id="popup-product-price">$0.00</span>
+                    <span id="popup-shipping">Shipping: $0.00</span>
+                    <span id="popup-total">Cart total: $0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="js/add-to-cart.js"></script>
+</body>
+
+</html>
